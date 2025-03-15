@@ -1,5 +1,96 @@
-(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "5cd3ed24-9d10-4cb3-b484-1cb6ef7308c8")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 73.66 50.8)
+		(size 21.59 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "588b0fc7-13fe-45ab-b891-442ea2d4909c")
+		(property "Sheetname" "max2771"
+			(at 73.66 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "max2771.kicad_sch"
+			(at 73.66 75.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I0" output
+			(at 95.25 54.61 0)
+			(uuid "c025a8d4-b128-40e8-b837-d54c1aa2d008")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Q0" output
+			(at 95.25 57.15 0)
+			(uuid "1793df52-d00e-4ca5-82cf-ed2a97ec3faf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I1" output
+			(at 95.25 59.69 0)
+			(uuid "92f57a6e-226a-4b1d-bc78-139336da5e84")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Q1" output
+			(at 95.25 62.23 0)
+			(uuid "6d3d0ffe-4b4e-4a73-8f1c-976c40cd2a0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "max2771eval"
+				(path "/5cd3ed24-9d10-4cb3-b484-1cb6ef7308c8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

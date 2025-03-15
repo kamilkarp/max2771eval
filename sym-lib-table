@@ -1,4 +1,8 @@
 (sym_lib_table
   (version 7)
   (lib (name "max2771eti+")(type "KiCad")(uri "${KIPRJMOD}/lib/ul_MAX2771ETI-/KiCADv6/max2771_eti.kicad_sym")(options "")(descr ""))
+  (lib (name "74AVC9112DCH")(type "KiCad")(uri "${KIPRJMOD}/lib/74AVC9112DCH/74AVC9112DCH.kicad_sym")(options "")(descr ""))
+  (lib (name "YAAJ_BluePill_SWD_Breakout")(type "Legacy")(uri "${KIPRJMOD}/lib/BluePill/YAAJ_BluePill_SWD_Breakout.lib")(options "")(descr ""))
+  (lib (name "MAX8510EXK33+T")(type "Legacy")(uri "${KIPRJMOD}/lib/MAX8510EXK33+T/KiCad/MAX8510EXK33+T.lib")(options "")(descr ""))
+  (lib (name "ATX-H11-F-24_000MHz-F25-T")(type "KiCad")(uri "${KIPRJMOD}/lib/ATX-H11-F-24.000MHz-F25-T/KiCad/ATX-H11-F-24_000MHz-F25-T.kicad_sym")(options "")(descr ""))
 )

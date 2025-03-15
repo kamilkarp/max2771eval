@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 74AVC9112DCH
+#/1453902/1629819/2.50/8/2/Integrated Circuit
+DEF 74AVC9112DCH IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "74AVC9112DCH" 850 200 50 H V L CNN
+F2 "SOP50P310X100-8N" 850 100 50 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/74AVC9112.pdf" 850 0 50 H I L CNN
+F4 "74AVC9112 - 1-to-4 fan-out buffer@en-us" 850 -100 50 H I L CNN "Description"
+F5 "1" 850 -200 50 H I L CNN "Height"
+F6 "771-74AVC9112DCH" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Nexperia/74AVC9112DCH?qs=MLItCLRbWszsM94Jl1aMAA%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Nexperia" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "74AVC9112DCH" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VCC 1 0 0 200 R 50 50 0 0 P
+X A 2 0 -100 200 R 50 50 0 0 P
+X ~OE 3 0 -200 200 R 50 50 0 0 P
+X GND 4 0 -300 200 R 50 50 0 0 P
+X Y4 8 1000 0 200 L 50 50 0 0 P
+X Y3 7 1000 -100 200 L 50 50 0 0 P
+X Y2 6 1000 -200 200 L 50 50 0 0 P
+X Y1 5 1000 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

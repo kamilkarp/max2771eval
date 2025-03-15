@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74AVC9112DCH
+D 74AVC9112 - 1-to-4 fan-out buffer@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74AVC9112.pdf
+$ENDCMP
+#
+#End Doc Library

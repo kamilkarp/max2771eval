@@ -1,0 +1,9 @@
+Manufacturer=Analog Devices
+PartNumber=MAX8510EXK33+T
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (5-Pin)
+PinCount=5
+Version=2.1
+Released=2020-10-15 04:57:24
+Downloaded=2025-03-29 22:53:20
+3D=Y

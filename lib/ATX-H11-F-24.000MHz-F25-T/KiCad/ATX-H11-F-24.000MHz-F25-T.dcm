@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATX-H11-F-24.000MHz-F25-T
+D 24 MHz TCXO CMOS Oscillator 1.68V ~ 3.63V 4-SMD, No Lead
+K
+F https://abracon.com/datasheets/ATX-H11.pdf
+$ENDCMP
+#
+#End Doc Library

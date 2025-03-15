@@ -1,2 +1,6 @@
 .DS_Store
 max2771eval-backups
+*.lck
+fp-info-cache
+production/backups
+\#auto_saved_files\#

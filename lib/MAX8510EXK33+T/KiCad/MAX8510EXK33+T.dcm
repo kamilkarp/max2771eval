@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX8510EXK33+T
+D MAXIM INTEGRATED PRODUCTS - MAX8510EXK33+T - Fixed LDO Voltage Regulator, 2V-6V in, 120mV Dropout, 3.3V/120mA out, SC-70-5
+K
+F https://pdfserv.maximintegrated.com/en/ds/MAX8510-MAX8512.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/ul_MAX2771ETI-/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "BluePill")(type "KiCad")(uri "${KIPRJMOD}/lib/BluePill")(options "")(descr ""))
+  (lib (name "74AVC9112DCH")(type "KiCad")(uri "${KIPRJMOD}/lib/74AVC9112DCH")(options "")(descr ""))
+  (lib (name "MAX8510EXK33+T")(type "KiCad")(uri "${KIPRJMOD}/lib/MAX8510EXK33+T/KiCad")(options "")(descr ""))
+  (lib (name "ATX-H11-F-24.000MHz-F25-T")(type "KiCad")(uri "${KIPRJMOD}/lib/ATX-H11-F-24.000MHz-F25-T/KiCad")(options "")(descr ""))
+)

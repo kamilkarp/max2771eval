@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "MAX2771ETI+ module")
+		(company "K. Karpacz")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -1298,6 +1299,12 @@
 		(uuid "e151c2ae-f7c5-4ec5-b788-01839ba230e3")
 	)
 	(junction
+		(at 85.09 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f57fc0a6-a4d3-46d7-857b-6d2edc2cd8c6")
+	)
+	(junction
 		(at 143.51 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1332,16 +1339,6 @@
 			(type default)
 		)
 		(uuid "0bedb6f0-003d-4c73-8cd2-8efaf3b8fcad")
-	)
-	(wire
-		(pts
-			(xy 72.39 87.63) (xy 85.09 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1274f876-a529-4a21-913f-4dc51ff3ebf0")
 	)
 	(wire
 		(pts
@@ -1415,7 +1412,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 113.03) (xy 118.11 113.03)
+			(xy 80.01 113.03) (xy 87.63 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1462,6 +1459,16 @@
 			(type default)
 		)
 		(uuid "42676b78-17ad-464f-845a-3620e2d2ae41")
+	)
+	(wire
+		(pts
+			(xy 72.39 87.63) (xy 85.09 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c60a3a-e1b2-4886-897c-ffd59f628a7e")
 	)
 	(wire
 		(pts
@@ -1562,6 +1569,16 @@
 			(type default)
 		)
 		(uuid "65b4bad5-449e-44d6-a1b4-02f2c09e003c")
+	)
+	(wire
+		(pts
+			(xy 92.71 113.03) (xy 118.11 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "663bef9d-cff1-4aa4-a75a-1b4fc7aa7c81")
 	)
 	(wire
 		(pts
@@ -1712,6 +1729,16 @@
 			(type default)
 		)
 		(uuid "a94f421b-48c3-41c9-bb5f-f619775d6132")
+	)
+	(wire
+		(pts
+			(xy 85.09 88.9) (xy 90.17 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "add95d7f-aa1a-4327-a986-99e59e1cda4f")
 	)
 	(wire
 		(pts
@@ -1889,7 +1916,7 @@
 	)
 	(hierarchical_label "REF_CLK_OUT"
 		(shape output)
-		(at 104.14 113.03 180)
+		(at 80.01 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2085,6 +2112,376 @@
 		)
 		(uuid "ffc1b77a-fee1-46f7-bf37-8562842ce31a")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 114.3 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cdd7e06-26d3-4897-a75d-6bf7eca12a06")
+		(property "Netclass" "RF_50"
+			(at 114.9985 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -35.56 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 77.47 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "242f25cf-55c2-4a06-8eed-675f2285f40b")
+		(property "Netclass" "RF_50"
+			(at 78.1685 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -72.39 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 132.08 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ef57a9e-11de-4ef6-917c-fdc0a1820eca")
+		(property "Netclass" "RF_50"
+			(at 132.7785 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -17.78 -58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 110.49 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60002c33-ca88-470d-89b9-cf7819f985b8")
+		(property "Netclass" "RF_50"
+			(at 111.1885 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -134.62 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 90.17 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "631ed5ab-abaa-40a5-8d6d-7d562de51325")
+		(property "Netclass" "RF_50"
+			(at 90.8685 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -59.69 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 140.97 36.83 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69099e85-6921-4c10-9659-d404dcf3b32c")
+		(property "Netclass" "RF_50"
+			(at 145.034 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -8.89 -57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 62.23 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7bef7765-8c4a-474f-a9d1-51255657b003")
+		(property "Netclass" "RF_50"
+			(at 62.9285 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -87.63 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 113.03 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b87b300-1f75-4b68-9ded-e4d5f0a04fbf")
+		(property "Netclass" "RF_50"
+			(at 113.7285 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -36.83 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 116.84 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b93f88de-4e63-48f2-bb99-a691cf6923e2")
+		(property "Netclass" "RF_50"
+			(at 117.5385 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -33.02 -58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 140.97 68.58 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f117452c-bae0-4fb4-b7c6-58c3108edab6")
+		(property "Netclass" "RF_50"
+			(at 134.62 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -8.89 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 148.59 48.26 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5422045-f9fa-4d63-afc0-f0d6bd7da184")
+		(property "Netclass" "RF_50"
+			(at 151.13 47.5615 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -1.27 -45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 140.97 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd107134-c7b7-4647-bff8-6a7f6d189233")
+		(property "Netclass" "RF_50"
+			(at 141.6685 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -8.89 -36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 140.97 39.37 180)
@@ -2103,7 +2500,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "1.1 pF"
 			(at 138.43 38.0938 0)
 			(effects
 				(font
@@ -2112,7 +2509,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 140.97 39.37 0)
 			(effects
 				(font
@@ -2303,7 +2700,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.47nF"
 			(at 71.1262 85.09 0)
 			(effects
 				(font
@@ -2312,7 +2709,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 69.85 87.63 0)
 			(effects
 				(font
@@ -2372,7 +2769,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "15k"
 			(at 135.89 147.32 90)
 			(effects
 				(font
@@ -2380,7 +2777,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 136.144 150.114 90)
 			(effects
 				(font
@@ -2505,7 +2902,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "10nF"
 			(at 109.2138 121.92 0)
 			(effects
 				(font
@@ -2514,7 +2911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 110.49 119.38 0)
 			(effects
 				(font
@@ -2575,7 +2972,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "15pF"
 			(at 146.05 157.4862 0)
 			(effects
 				(font
@@ -2584,7 +2981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 143.51 156.21 0)
 			(effects
 				(font
@@ -2904,7 +3301,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.47nF"
 			(at 104.14 91.4338 0)
 			(effects
 				(font
@@ -2913,7 +3310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 106.68 92.71 0)
 			(effects
 				(font
@@ -2973,7 +3370,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.47nF"
 			(at 138.43 60.9538 0)
 			(effects
 				(font
@@ -2982,7 +3379,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 140.97 62.23 0)
 			(effects
 				(font
@@ -3043,7 +3440,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.1μF"
 			(at 193.04 100.3362 0)
 			(effects
 				(font
@@ -3052,7 +3449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 190.5 99.06 0)
 			(effects
 				(font
@@ -3112,7 +3509,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "5.6 nH"
 			(at 88.9 85.09 90)
 			(effects
 				(font
@@ -3120,7 +3517,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
 			(at 88.9 87.63 0)
 			(effects
 				(font
@@ -3187,7 +3584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "21-0140L_T2855-8_MXM"
+		(property "Footprint" "footprints:21-0140L_T2855-8_MXM"
 			(at 118.11 82.55 0)
 			(effects
 				(font
@@ -3331,7 +3728,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.1μF"
 			(at 181.61 134.6262 0)
 			(effects
 				(font
@@ -3340,7 +3737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 179.07 133.35 0)
 			(effects
 				(font
@@ -3531,7 +3928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.1μF"
 			(at 166.37 154.9462 0)
 			(effects
 				(font
@@ -3540,7 +3937,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 163.83 153.67 0)
 			(effects
 				(font
@@ -3665,7 +4062,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.1μF"
 			(at 130.81 135.8962 0)
 			(effects
 				(font
@@ -3674,7 +4071,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 128.27 134.62 0)
 			(effects
 				(font
@@ -3734,7 +4131,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "8.4 nH"
 			(at 144.78 33.02 90)
 			(effects
 				(font
@@ -3742,7 +4139,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
 			(at 144.78 35.56 0)
 			(effects
 				(font
@@ -3786,6 +4183,75 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 90.17 113.03 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9460fe7-f8f1-43d6-8f4d-84541fa3bb4b")
+		(property "Reference" "C2"
+			(at 91.4338 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10nF"
+			(at 88.8938 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 90.17 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "807ea0bb-c56e-4a2c-aacf-218d72370b58")
+		)
+		(pin "2"
+			(uuid "61022255-95c4-4bb5-a5b7-d5ac96cdf396")
+		)
+		(instances
+			(project "max2771eval"
+				(path "/5cd3ed24-9d10-4cb3-b484-1cb6ef7308c8/588b0fc7-13fe-45ab-b891-442ea2d4909c"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 105.41 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3794,7 +4260,7 @@
 		(dnp no)
 		(uuid "ca623517-26a6-4d9e-b93f-5b30b25d6d17")
 		(property "Reference" "C14"
-			(at 102.87 64.7638 0)
+			(at 102.616 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,8 +4268,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
-			(at 102.87 62.2238 0)
+		(property "Value" "0.1nF"
+			(at 102.108 65.024 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3811,7 +4277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 105.41 63.5 0)
 			(effects
 				(font
@@ -3871,7 +4337,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.47nF"
 			(at 127.0062 33.02 0)
 			(effects
 				(font
@@ -3880,7 +4346,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 125.73 35.56 0)
 			(effects
 				(font
@@ -3932,7 +4398,7 @@
 		(dnp no)
 		(uuid "e3d470e3-1586-44a3-9c30-8a759fe8e34d")
 		(property "Reference" "C13"
-			(at 118.11 64.77 0)
+			(at 118.11 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3940,8 +4406,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
-			(at 121.666 62.23 0)
+		(property "Value" "0.1μF"
+			(at 119.38 65.278 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3949,7 +4415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 111.76 63.5 0)
 			(effects
 				(font
@@ -4009,7 +4475,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "1.7 pF"
 			(at 82.55 90.1638 0)
 			(effects
 				(font
@@ -4018,7 +4484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 85.09 91.44 0)
 			(effects
 				(font
@@ -4078,7 +4544,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.75nF"
 			(at 119.634 156.718 0)
 			(effects
 				(font
@@ -4087,7 +4553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 129.54 156.21 0)
 			(effects
 				(font
@@ -4212,7 +4678,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_Small"
+		(property "Value" "0.1μF"
 			(at 174.244 42.418 0)
 			(effects
 				(font
@@ -4221,7 +4687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 163.83 43.18 0)
 			(effects
 				(font

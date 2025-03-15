@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model ATX-H11-F-24.000MHz-F25-T
+#/16623919/1629819/2.50/4/2/Crystal or Oscillator
+DEF ATX-H11-F-24.000MHz-F25-T Y 0 30 Y Y 1 F N
+F0 "Y" 1050 300 50 H V L CNN
+F1 "ATX-H11-F-24.000MHz-F25-T" 1050 200 50 H V L CNN
+F2 "ATXH11F24000MHzF25T" 1050 100 50 H I L CNN
+F3 "https://abracon.com/datasheets/ATX-H11.pdf" 1050 0 50 H I L CNN
+F4 "24 MHz TCXO CMOS Oscillator 1.68V ~ 3.63V 4-SMD, No Lead" 1050 -100 50 H I L CNN "Description"
+F5 "1.2" 1050 -200 50 H I L CNN "Height"
+F6 "815-H11F24000MHZF25T" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ABRACON/ATX-H11-F-24.000MHz-F25-T?qs=vvQtp7zwQdNuA4bpvBJ71A%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "ABRACON" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "ATX-H11-F-24.000MHz-F25-T" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~INH 1 0 -100 200 R 50 50 0 0 P
+X GND 2 1200 -100 200 L 50 50 0 0 P
+X OUTPUT 3 1200 0 200 L 50 50 0 0 P
+X VDD 4 0 0 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

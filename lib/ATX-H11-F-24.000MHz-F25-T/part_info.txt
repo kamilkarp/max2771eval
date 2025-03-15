@@ -1,0 +1,9 @@
+Manufacturer=ABRACON
+PartNumber=ATX-H11-F-24.000MHz-F25-T
+PartCategory=Crystal or Oscillator
+PackageCategory=Other
+PinCount=4
+Version=2.2
+Released=2023-08-16 05:35:21
+Downloaded=2025-03-31 18:49:48
+3D=Y

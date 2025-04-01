@@ -563,10 +563,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "plots2",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "max2771eval.step",
       "svg": "",
       "vrml": ""
     },
@@ -736,7 +736,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "outputs",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",

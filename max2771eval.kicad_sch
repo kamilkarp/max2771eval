@@ -6678,7 +6678,7 @@
 		(at 153.67 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -6745,7 +6745,7 @@
 		(at 153.67 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8665,7 +8665,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.6nH"
+		(property "Value" "1uH"
 			(at 60.96 71.1199 0)
 			(effects
 				(font
@@ -10048,7 +10048,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.6nH"
+		(property "Value" "1uH"
 			(at 60.96 49.5299 0)
 			(effects
 				(font

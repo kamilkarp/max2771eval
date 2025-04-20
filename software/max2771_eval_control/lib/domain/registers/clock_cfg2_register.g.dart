@@ -15,7 +15,9 @@ class _ClockCfg2Register implements ClockCfg2Register {
 
   final GetSetHook<int>? _hook;
 
-  static const int CLKOUT_SELBits = 2;
+  static const int _reserved0Bits = 2;
+
+  static const int CLKOUT_SELBits = 1;
 
   static const int PRE_FRACDIV_SELBits = 1;
 
@@ -25,15 +27,20 @@ class _ClockCfg2Register implements ClockCfg2Register {
 
   static const int _reservedBits = 4;
 
-  static const int CLKOUT_SELOffset = 0;
+  static const int _reserved0Offset = 0;
 
-  static const int PRE_FRACDIV_SELOffset = 2;
+  static const int CLKOUT_SELOffset = 2;
 
-  static const int ADCCLK_M_CNTOffset = 3;
+  static const int PRE_FRACDIV_SELOffset = 3;
 
-  static const int ADCCLK_L_CNTOffset = 15;
+  static const int ADCCLK_M_CNTOffset = 4;
 
-  static const int _reservedOffset = 27;
+  static const int ADCCLK_L_CNTOffset = 16;
+
+  static const int _reservedOffset = 28;
+
+  static const int _reserved0Mask =
+      ((0x01 << _reserved0Bits) - 1) << _reserved0Offset;
 
   static const int CLKOUT_SELMask =
       ((0x01 << CLKOUT_SELBits) - 1) << CLKOUT_SELOffset;
@@ -67,6 +74,9 @@ class _ClockCfg2Register implements ClockCfg2Register {
   }
 
   @override
+  int get _reserved0 => ((value & _reserved0Mask) >> _reserved0Offset);
+
+  @override
   int get CLKOUT_SEL => ((value & CLKOUT_SELMask) >> CLKOUT_SELOffset);
 
   @override
@@ -81,6 +91,10 @@ class _ClockCfg2Register implements ClockCfg2Register {
 
   @override
   int get _reserved => ((value & _reservedMask) >> _reservedOffset);
+
+  @override
+  set _reserved0(int v) => value =
+      (value & ~_reserved0Mask) | ((v << _reserved0Offset) & _reserved0Mask);
 
   @override
   set CLKOUT_SEL(int v) => value =

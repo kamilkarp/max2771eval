@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
         preferredSize: Size.fromHeight(60),
         child: ConnectionAppbar(),
       ),
-      body: RegistersView(),
+      body: SelectionArea(child: RegistersView()),
     );
   }
 }

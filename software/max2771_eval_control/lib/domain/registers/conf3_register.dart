@@ -67,6 +67,9 @@ class Conf3Register {
   @Bits(2)
   late int STRMBITS; // bits 4–5
 
+  @Bits(3)
+  late int _reserved; // bits 6–8 (reserved / unused)
+
   @Bits(1)
   late int STRMSTOP; // bit 9
 
@@ -94,8 +97,8 @@ class Conf3Register {
   @Bits(1)
   late int HILOADEN; // bit 20
 
-  @Bits(2)
-  late int _reserved2; // bits 21–21 (reserved / unused)
+  @Bits(1)
+  late int _reserved2; // bits 21 (reserved / unused)
 
   @Bits(6)
   late int GAININ; // bits 22–27

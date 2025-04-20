@@ -55,6 +55,9 @@ class Conf2Register {
   late int DIEID; // bits 0–1
 
   @Bits(2)
+  late int _reserved0; // bits 2–3 (not used)
+
+  @Bits(2)
   late int DRVCFG; // bits 4–5
 
   @Bits(3)

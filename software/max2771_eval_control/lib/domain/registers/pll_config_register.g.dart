@@ -15,6 +15,8 @@ class _PLLConfigRegister implements PLLConfigRegister {
 
   final GetSetHook<int>? _hook;
 
+  static const int _reservedBits = 2;
+
   static const int PWRSAVBits = 1;
 
   static const int INT_PLLBits = 1;
@@ -37,27 +39,32 @@ class _PLLConfigRegister implements PLLConfigRegister {
 
   static const int REFDIVBits = 3;
 
-  static const int PWRSAVOffset = 0;
+  static const int _reservedOffset = 0;
 
-  static const int INT_PLLOffset = 1;
+  static const int PWRSAVOffset = 2;
 
-  static const int _reserved0Offset = 2;
+  static const int INT_PLLOffset = 3;
 
-  static const int ICPOffset = 7;
+  static const int _reserved0Offset = 4;
 
-  static const int _reserved1Offset = 8;
+  static const int ICPOffset = 9;
 
-  static const int IXTALOffset = 17;
+  static const int _reserved1Offset = 10;
 
-  static const int _reserved2Offset = 19;
+  static const int IXTALOffset = 19;
 
-  static const int REFOUTENOffset = 22;
+  static const int _reserved2Offset = 21;
 
-  static const int _reserved3Offset = 23;
+  static const int REFOUTENOffset = 24;
 
-  static const int LOBANDOffset = 26;
+  static const int _reserved3Offset = 25;
 
-  static const int REFDIVOffset = 27;
+  static const int LOBANDOffset = 28;
+
+  static const int REFDIVOffset = 29;
+
+  static const int _reservedMask =
+      ((0x01 << _reservedBits) - 1) << _reservedOffset;
 
   static const int PWRSAVMask = ((0x01 << PWRSAVBits) - 1) << PWRSAVOffset;
 
@@ -103,6 +110,9 @@ class _PLLConfigRegister implements PLLConfigRegister {
   }
 
   @override
+  int get _reserved => ((value & _reservedMask) >> _reservedOffset);
+
+  @override
   int get PWRSAV => ((value & PWRSAVMask) >> PWRSAVOffset);
 
   @override
@@ -134,6 +144,10 @@ class _PLLConfigRegister implements PLLConfigRegister {
 
   @override
   int get REFDIV => ((value & REFDIVMask) >> REFDIVOffset);
+
+  @override
+  set _reserved(int v) => value =
+      (value & ~_reservedMask) | ((v << _reservedOffset) & _reservedMask);
 
   @override
   set PWRSAV(int v) =>

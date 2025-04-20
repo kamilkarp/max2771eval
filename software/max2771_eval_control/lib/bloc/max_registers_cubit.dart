@@ -83,6 +83,26 @@ class MaxRegistersCubit extends Cubit<RegistersState> {
     super.close();
   }
 
+  Future<void> resetDevice() async {
+    if (state.loading) throw Exception("Operation in progress");
+    emit(state.copyWith(loading: true));
+
+    try {
+      await _writeRegister(Conf1MaxRegister.def());
+      await _writeRegister(Conf2MaxRegister.def());
+      await _writeRegister(Conf3MaxRegister.def());
+      await _writeRegister(PLLConfigMaxRegister.def());
+      await _writeRegister(PLLIntDivMaxRegister.def());
+      await _writeRegister(PLLFracDivMaxRegister.def());
+      await _writeRegister(ClockCfg1MaxRegister.def());
+      await _writeRegister(ClockCfg2MaxRegister.def());
+      emit(state.copyWith(loading: false));
+    } catch (e) {
+      emit(state.copyWith(loading: false));
+      rethrow;
+    }
+  }
+
   Future<void> writeAll() async {
     if (state.loading) throw Exception("Operation in progress");
     emit(state.copyWith(loading: true));

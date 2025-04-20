@@ -32,6 +32,9 @@ part 'pll_config_register.g.dart';
  */
 @BitField(32)
 class PLLConfigRegister {
+  @Bits(2)
+  late int _reserved; // bits 0–1 (reserved / unused)
+
   @Bits(1)
   late int PWRSAV; // bit 2
 

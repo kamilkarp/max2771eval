@@ -19,14 +19,11 @@ class PLLIntDivRegister {
   @Bits(10)
   late int RDIV; // bits 3–12
 
-  @Bits(2)
-  late int _reserved1; // bits 13–14 (reserved / unused)
-
   @Bits(15)
-  late int NDIV; // bits 15–29
+  late int NDIV; // bits 12–27
 
-  @Bits(2)
-  late int _reserved2; // bits 30–31 (reserved / unused)
+  @Bits(4)
+  late int _reserved1; // bits 28–31 (reserved / unused)
 
   late int value;
 

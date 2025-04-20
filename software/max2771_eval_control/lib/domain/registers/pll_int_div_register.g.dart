@@ -19,34 +19,27 @@ class _PLLIntDivRegister implements PLLIntDivRegister {
 
   static const int RDIVBits = 10;
 
-  static const int _reserved1Bits = 2;
-
   static const int NDIVBits = 15;
 
-  static const int _reserved2Bits = 2;
+  static const int _reserved1Bits = 4;
 
   static const int _reserved0Offset = 0;
 
   static const int RDIVOffset = 3;
 
-  static const int _reserved1Offset = 13;
+  static const int NDIVOffset = 13;
 
-  static const int NDIVOffset = 15;
-
-  static const int _reserved2Offset = 30;
+  static const int _reserved1Offset = 28;
 
   static const int _reserved0Mask =
       ((0x01 << _reserved0Bits) - 1) << _reserved0Offset;
 
   static const int RDIVMask = ((0x01 << RDIVBits) - 1) << RDIVOffset;
 
-  static const int _reserved1Mask =
-      ((0x01 << _reserved1Bits) - 1) << _reserved1Offset;
-
   static const int NDIVMask = ((0x01 << NDIVBits) - 1) << NDIVOffset;
 
-  static const int _reserved2Mask =
-      ((0x01 << _reserved2Bits) - 1) << _reserved2Offset;
+  static const int _reserved1Mask =
+      ((0x01 << _reserved1Bits) - 1) << _reserved1Offset;
 
   @override
   int get value {
@@ -71,13 +64,10 @@ class _PLLIntDivRegister implements PLLIntDivRegister {
   int get RDIV => ((value & RDIVMask) >> RDIVOffset);
 
   @override
-  int get _reserved1 => ((value & _reserved1Mask) >> _reserved1Offset);
-
-  @override
   int get NDIV => ((value & NDIVMask) >> NDIVOffset);
 
   @override
-  int get _reserved2 => ((value & _reserved2Mask) >> _reserved2Offset);
+  int get _reserved1 => ((value & _reserved1Mask) >> _reserved1Offset);
 
   @override
   set _reserved0(int v) => value =
@@ -88,14 +78,10 @@ class _PLLIntDivRegister implements PLLIntDivRegister {
       value = (value & ~RDIVMask) | ((v << RDIVOffset) & RDIVMask);
 
   @override
-  set _reserved1(int v) => value =
-      (value & ~_reserved1Mask) | ((v << _reserved1Offset) & _reserved1Mask);
-
-  @override
   set NDIV(int v) =>
       value = (value & ~NDIVMask) | ((v << NDIVOffset) & NDIVMask);
 
   @override
-  set _reserved2(int v) => value =
-      (value & ~_reserved2Mask) | ((v << _reserved2Offset) & _reserved2Mask);
+  set _reserved1(int v) => value =
+      (value & ~_reserved1Mask) | ((v << _reserved1Offset) & _reserved1Mask);
 }

@@ -24,6 +24,9 @@ part 'clock_cfg2_register.g.dart';
 @BitField(32)
 class ClockCfg2Register {
   @Bits(2)
+  late int _reserved0; // bits 0–1 (reserved / unused)
+
+  @Bits(1)
   late int CLKOUT_SEL; // bit 2
 
   @Bits(1)

@@ -25,6 +25,8 @@ class _Conf3Register implements Conf3Register {
 
   static const int STRMBITSBits = 2;
 
+  static const int _reservedBits = 3;
+
   static const int STRMSTOPBits = 1;
 
   static const int STRMSTARTBits = 1;
@@ -43,7 +45,7 @@ class _Conf3Register implements Conf3Register {
 
   static const int HILOADENBits = 1;
 
-  static const int _reserved2Bits = 2;
+  static const int _reserved2Bits = 1;
 
   static const int GAININBits = 6;
 
@@ -59,29 +61,31 @@ class _Conf3Register implements Conf3Register {
 
   static const int STRMBITSOffset = 4;
 
-  static const int STRMSTOPOffset = 6;
+  static const int _reservedOffset = 6;
 
-  static const int STRMSTARTOffset = 7;
+  static const int STRMSTOPOffset = 9;
 
-  static const int STRMENOffset = 8;
+  static const int STRMSTARTOffset = 10;
 
-  static const int PGAQENOffset = 9;
+  static const int STRMENOffset = 11;
 
-  static const int PGAIENOffset = 10;
+  static const int PGAQENOffset = 12;
 
-  static const int _reserved0Offset = 11;
+  static const int PGAIENOffset = 13;
 
-  static const int FHIPENOffset = 12;
+  static const int _reserved0Offset = 14;
 
-  static const int _reserved1Offset = 13;
+  static const int FHIPENOffset = 15;
 
-  static const int HILOADENOffset = 17;
+  static const int _reserved1Offset = 16;
 
-  static const int _reserved2Offset = 18;
+  static const int HILOADENOffset = 20;
 
-  static const int GAININOffset = 20;
+  static const int _reserved2Offset = 21;
 
-  static const int _reserved3Offset = 26;
+  static const int GAININOffset = 22;
+
+  static const int _reserved3Offset = 28;
 
   static const int STRMRSTMask = ((0x01 << STRMRSTBits) - 1) << STRMRSTOffset;
 
@@ -95,6 +99,9 @@ class _Conf3Register implements Conf3Register {
 
   static const int STRMBITSMask =
       ((0x01 << STRMBITSBits) - 1) << STRMBITSOffset;
+
+  static const int _reservedMask =
+      ((0x01 << _reservedBits) - 1) << _reservedOffset;
 
   static const int STRMSTOPMask =
       ((0x01 << STRMSTOPBits) - 1) << STRMSTOPOffset;
@@ -159,6 +166,9 @@ class _Conf3Register implements Conf3Register {
   int get STRMBITS => ((value & STRMBITSMask) >> STRMBITSOffset);
 
   @override
+  int get _reserved => ((value & _reservedMask) >> _reservedOffset);
+
+  @override
   int get STRMSTOP => ((value & STRMSTOPMask) >> STRMSTOPOffset);
 
   @override
@@ -213,6 +223,10 @@ class _Conf3Register implements Conf3Register {
   @override
   set STRMBITS(int v) =>
       value = (value & ~STRMBITSMask) | ((v << STRMBITSOffset) & STRMBITSMask);
+
+  @override
+  set _reserved(int v) => value =
+      (value & ~_reservedMask) | ((v << _reservedOffset) & _reservedMask);
 
   @override
   set STRMSTOP(int v) =>

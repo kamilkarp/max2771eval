@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:max2771_eval_control/bloc/max_registers_cubit.dart';
+import 'package:max2771_eval_control/widget/adc_clock_calc/adc_clock_calc.dart';
 import 'package:max2771_eval_control/widget/register_view/register_viewer_builder.dart';
 
 class RegistersView extends StatelessWidget {
@@ -34,6 +35,7 @@ class RegistersView extends StatelessWidget {
               RegisterViewerBuilder(register: pllFracDiv),
               RegisterViewerBuilder(register: clockCfg1),
               RegisterViewerBuilder(register: clockCfg2),
+              AdcClockCalc(),
             ],
           ),
         ),

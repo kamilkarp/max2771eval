@@ -17,6 +17,8 @@ class _Conf2Register implements Conf2Register {
 
   static const int DIEIDBits = 2;
 
+  static const int _reserved0Bits = 2;
+
   static const int DRVCFGBits = 2;
 
   static const int BITSBits = 3;
@@ -37,25 +39,30 @@ class _Conf2Register implements Conf2Register {
 
   static const int DIEIDOffset = 0;
 
-  static const int DRVCFGOffset = 2;
+  static const int _reserved0Offset = 2;
 
-  static const int BITSOffset = 4;
+  static const int DRVCFGOffset = 4;
 
-  static const int FORMATOffset = 7;
+  static const int BITSOffset = 6;
 
-  static const int AGCMODEOffset = 9;
+  static const int FORMATOffset = 9;
 
-  static const int SPI_SDIO_CONFIGOffset = 11;
+  static const int AGCMODEOffset = 11;
 
-  static const int GAINREFOffset = 13;
+  static const int SPI_SDIO_CONFIGOffset = 13;
 
-  static const int IQENOffset = 25;
+  static const int GAINREFOffset = 15;
 
-  static const int ANAIMONOffset = 26;
+  static const int IQENOffset = 27;
 
-  static const int _reservedOffset = 27;
+  static const int ANAIMONOffset = 28;
+
+  static const int _reservedOffset = 29;
 
   static const int DIEIDMask = ((0x01 << DIEIDBits) - 1) << DIEIDOffset;
+
+  static const int _reserved0Mask =
+      ((0x01 << _reserved0Bits) - 1) << _reserved0Offset;
 
   static const int DRVCFGMask = ((0x01 << DRVCFGBits) - 1) << DRVCFGOffset;
 
@@ -97,6 +104,9 @@ class _Conf2Register implements Conf2Register {
   int get DIEID => ((value & DIEIDMask) >> DIEIDOffset);
 
   @override
+  int get _reserved0 => ((value & _reserved0Mask) >> _reserved0Offset);
+
+  @override
   int get DRVCFG => ((value & DRVCFGMask) >> DRVCFGOffset);
 
   @override
@@ -127,6 +137,10 @@ class _Conf2Register implements Conf2Register {
   @override
   set DIEID(int v) =>
       value = (value & ~DIEIDMask) | ((v << DIEIDOffset) & DIEIDMask);
+
+  @override
+  set _reserved0(int v) => value =
+      (value & ~_reserved0Mask) | ((v << _reserved0Offset) & _reserved0Mask);
 
   @override
   set DRVCFG(int v) =>

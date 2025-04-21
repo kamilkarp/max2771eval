@@ -92,6 +92,8 @@ void Max2771::setup() {
   pllInt |= (26257 << MAX2771_NDIV_PLLINTDIV_POS);  // integer part
   pllIntMask |= ( MAX2771_RDIV_PLLINTDIV | MAX2771_NDIV_PLLINTDIV);
   writeRegMasked(MAX2771_PLLINTDIV_ADR, pllInt, pllIntMask);
+
+  driver_->setShutdown(false);
 }
 
 uint32_t Max2771::readReg(uint8_t address) {

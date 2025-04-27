@@ -11,8 +11,8 @@ class AdcClockCalc extends StatefulWidget {
 class _AdcClockCalcState extends State<AdcClockCalc> {
   final TextEditingController _refValue = TextEditingController(text: "24");
 
-  final TextEditingController _mValue = TextEditingController(text: "0");
-  final TextEditingController _lValue = TextEditingController(text: "0");
+  final TextEditingController _mValue = TextEditingController(text: "3849");
+  final TextEditingController _lValue = TextEditingController(text: "128");
   double _result = 0;
 
   @override

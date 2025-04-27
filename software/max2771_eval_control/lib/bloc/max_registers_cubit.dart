@@ -5,6 +5,7 @@ import 'dart:typed_data';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:max2771_eval_control/data/connection_manager.dart';
 import 'package:max2771_eval_control/domain/models/max_register.dart';
+import 'package:max2771_eval_control/domain/preset/max_preset.dart';
 
 class RegistersState {
   RegistersState({
@@ -116,6 +117,26 @@ class MaxRegistersCubit extends Cubit<RegistersState> {
       await _writeRegister(state.pllFracDiv);
       await _writeRegister(state.clockCfg1);
       await _writeRegister(state.clockCfg2);
+      emit(state.copyWith(loading: false));
+    } catch (e) {
+      emit(state.copyWith(loading: false));
+      rethrow;
+    }
+  }
+
+  Future<void> writePreset(MaxPreset preset) async {
+    if (state.loading) throw Exception("Operation in progress");
+    emit(state.copyWith(loading: true));
+
+    try {
+      await _writeRegister(preset.config1);
+      await _writeRegister(preset.config2);
+      await _writeRegister(preset.config3);
+      await _writeRegister(preset.pllConfig);
+      await _writeRegister(preset.pllIntDiv);
+      await _writeRegister(preset.pllFracDiv);
+      await _writeRegister(preset.clockCfg1);
+      await _writeRegister(preset.clockCfg2);
       emit(state.copyWith(loading: false));
     } catch (e) {
       emit(state.copyWith(loading: false));
